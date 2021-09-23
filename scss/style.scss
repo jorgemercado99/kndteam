@@ -1,0 +1,382 @@
+/*VARIABLES*/
+
+$color-primario: rgb(255, 244, 0);
+$color-secundario: rgb(73, 73, 0);
+$color-terciario: rgb(26, 23, 0);
+$font-titulos: 30px;
+
+/*VARIABLES*/
+
+/*INICIO GENERALES*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle,
+    $color-primario 0%,
+    $color-secundario 100%
+  );
+}
+h1 {
+  color: rgb(134, 132, 0);
+}
+h3 {
+  color: rgb(87, 86, 86);
+}
+p {
+  margin: 0px 10px;
+}
+/*FIN GENERALES*/
+
+/*INICIO HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    height: 75px;
+  }
+  .nav {
+    height: 75px;
+
+    .nav__ul__li {
+      justify-content: center;
+      text-align: center;
+    }
+    .nav__ul__li:hover {
+      background-color: rgb(39, 39, 39);
+      border-radius: 5%;
+    }
+  }
+  .nav__responsive {
+    display: none;
+  }
+}
+
+/*FIN HEADER*/
+
+/*INICIO INDEX*/
+
+.section__introduccion__title {
+  font-size: 30px;
+  color: $color-terciario;
+}
+.article__blog__title {
+  font-size: 30px;
+  color: $color-terciario;
+}
+.article__blog__subtitle {
+  padding: 0px 10px;
+}
+.article__ClipsSemana__title {
+  font-size: 30px;
+  color: $color-terciario;
+}
+.paneles:hover {
+  background-color: $color-secundario !important;
+  transition: 1s;
+  color: white;
+}
+.panelesText {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+.panelAds {
+  text-align: center;
+  color: white;
+  background-color: darkslategrey;
+  margin: 5px;
+  padding: 20px;
+  height: 300px;
+}
+
+/*FIN INDEX*/
+
+/*INICIO QUIENES SOMOS*/
+
+.titleQuienesSomos {
+  color: $color-terciario;
+  padding: 20px 10px;
+}
+.divQuienesSomos {
+  display: flex;
+
+  .divQuienesSomosTitle {
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: rgba(150, 150, 150, 0.4);
+    border-radius: 10%;
+  }
+}
+.ulRedes {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+
+  .ulLiRedes {
+    padding: 10px;
+
+    .ulLiARedes {
+      text-decoration: none;
+      color: $color-terciario;
+    }
+  }
+}
+
+/*FIN QUIENES SOMOS*/
+
+/*INICIO TIENDA*/
+
+.titleTienda {
+  color: $color-terciario;
+  padding: 20px 10px;
+}
+.camisetasTienda {
+  padding: 20px;
+}
+.buzosTienda {
+  padding: 20px;
+}
+.gorrasTienda {
+  padding: 20px;
+}
+.divTienda {
+  display: flex;
+  padding: 5px;
+}
+.sectionTienda {
+  width: auto;
+  height: auto;
+}
+.articuloTienda {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+.imagenArticuloTienda {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*FIN TIENDA*/
+
+/*INICIO COMUNIDAD*/
+
+.titleComunidad {
+  color: $color-terciario;
+  padding: 20px 10px;
+}
+.notasComunidad {
+  padding: 20px;
+}
+.titleClips {
+  color: $color-terciario;
+  padding: 20px 10px;
+}
+.divClips {
+  display: flex;
+  flex-wrap: wrap;
+
+  .divClipsBox {
+    background-color: grey;
+    margin: 15px;
+  }
+}
+
+/*FIN COMUNIDAD*/
+
+/*INICIO CONTACTO*/
+
+.titleContacto {
+  color: $color-terciario;
+  padding: 20px 10px;
+}
+.divFormContacto {
+  display: flex;
+  justify-content: center;
+
+  .formContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 2%;
+    padding: 40px;
+    margin: 20px 10px;
+    height: auto;
+    width: auto;
+
+    .formTitle {
+      margin: 0px 20px 20px 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .inputEmail {
+      height: 25px;
+      width: auto;
+      margin: 10px;
+    }
+    .inputName {
+      height: 25px;
+      width: auto;
+      margin: 10px;
+    }
+    .labelMayor18 {
+      height: 25px;
+      width: auto;
+      margin: 10px;
+    }
+    .labelMenor18 {
+      height: 25px;
+      width: auto;
+      margin: 10px;
+    }
+    .selectMotivo {
+      height: 25px;
+      width: auto;
+      margin: 10px;
+    }
+    .textareaComentarios {
+      height: auto;
+      margin: 10px;
+    }
+    .inputReset {
+      height: fit-content;
+      width: fit-content;
+      margin: 10px;
+    }
+    .inputSubmit {
+      height: 40px;
+      width: auto;
+      margin: 10px;
+      border-color: $color-terciario;
+    }
+  }
+}
+
+/*FIN CONTACTO*/
+
+/*INICIO FOOTER*/
+
+.footer {
+  background-color: lightgray;
+
+  .footer__items {
+    color: grey;
+  }
+}
+
+/*FIN FOOTER*/
+
+/*INICIO MEDIA QUERY*/
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  header {
+    display: flex !important;
+    flex-direction: column !important;
+
+    .logo {
+      height: auto;
+    }
+    .nav {
+      display: none !important;
+    }
+    .nav__responsive {
+      display: flex !important;
+      flex-direction: column !important;
+
+      .nav__responsive__ul {
+        list-style: none;
+        height: 100%;
+        display: flex;
+
+        .nav__responsive__ul__li {
+          display: inline-block;
+          padding: 10px 20px;
+          color: rgb(255, 255, 255);
+
+          .nav__responsive__ul__li__a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .nav__responsive__ul__li:hover {
+          background-color: rgb(39, 39, 39);
+          border-radius: 5%;
+        }
+      }
+    }
+  }
+  .divTienda {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      height: auto;
+      width: auto;
+      margin: 10px;
+    }
+    .nav {
+      display: none !important;
+    }
+    .nav__responsive {
+      display: flex !important;
+      width: 100%;
+
+      .nav__responsive__ul {
+        background-color: rgba(231, 231, 231, 0.1);
+        border: 1px solid rgb(169, 199, 0);
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .nav__responsive__ul__li {
+          display: flex;
+          width: 200px;
+          padding: 10px 20px;
+          color: rgb(255, 255, 255);
+          align-items: center;
+
+          .nav__responsive__ul__li__a {
+            color: rgb(255, 255, 255);
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .nav__responsive__ul__li:hover {
+          background-color: rgb(39, 39, 39);
+          border-radius: 5%;
+        }
+      }
+    }
+  }
+
+  .divQuienesSomos {
+    display: flex;
+    flex-direction: column;
+  }
+  .divTienda {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*FIN MEDIA QUERY*/

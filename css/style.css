@@ -1,0 +1,289 @@
+/*VARIABLES*/
+/*VARIABLES*/
+/*INICIO GENERALES*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, #fff400 0%, #494900 100%); }
+
+h1 {
+  color: #868400; }
+
+h3 {
+  color: #575656; }
+
+p {
+  margin: 0px 10px; }
+
+/*FIN GENERALES*/
+/*INICIO HEADER*/
+header {
+  display: flex;
+  flex-direction: row; }
+  header .logo {
+    height: 75px; }
+  header .nav {
+    height: 75px; }
+    header .nav .nav__ul__li {
+      justify-content: center;
+      text-align: center; }
+    header .nav .nav__ul__li:hover {
+      background-color: #272727;
+      border-radius: 5%; }
+  header .nav__responsive {
+    display: none; }
+
+/*FIN HEADER*/
+/*INICIO INDEX*/
+.section__introduccion__title {
+  font-size: 30px;
+  color: #1a1700; }
+
+.article__blog__title {
+  font-size: 30px;
+  color: #1a1700; }
+
+.article__blog__subtitle {
+  padding: 0px 10px; }
+
+.article__ClipsSemana__title {
+  font-size: 30px;
+  color: #1a1700; }
+
+.paneles:hover {
+  background-color: #494900 !important;
+  transition: 1s;
+  color: white; }
+
+.panelesText {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center; }
+
+.panelAds {
+  text-align: center;
+  color: white;
+  background-color: darkslategrey;
+  margin: 5px;
+  padding: 20px;
+  height: 300px; }
+
+/*FIN INDEX*/
+/*INICIO QUIENES SOMOS*/
+.titleQuienesSomos {
+  color: #1a1700;
+  padding: 20px 10px; }
+
+.divQuienesSomos {
+  display: flex; }
+  .divQuienesSomos .divQuienesSomosTitle {
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: rgba(150, 150, 150, 0.4);
+    border-radius: 10%; }
+
+.ulRedes {
+  display: flex;
+  list-style: none;
+  padding-left: 0; }
+  .ulRedes .ulLiRedes {
+    padding: 10px; }
+    .ulRedes .ulLiRedes .ulLiARedes {
+      text-decoration: none;
+      color: #1a1700; }
+
+/*FIN QUIENES SOMOS*/
+/*INICIO TIENDA*/
+.titleTienda {
+  color: #1a1700;
+  padding: 20px 10px; }
+
+.camisetasTienda {
+  padding: 20px; }
+
+.buzosTienda {
+  padding: 20px; }
+
+.gorrasTienda {
+  padding: 20px; }
+
+.divTienda {
+  display: flex;
+  padding: 5px; }
+
+.sectionTienda {
+  width: auto;
+  height: auto; }
+
+.articuloTienda {
+  width: 100%;
+  height: 100%;
+  margin: 20px; }
+
+.imagenArticuloTienda {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+/*FIN TIENDA*/
+/*INICIO COMUNIDAD*/
+.titleComunidad {
+  color: #1a1700;
+  padding: 20px 10px; }
+
+.notasComunidad {
+  padding: 20px; }
+
+.titleClips {
+  color: #1a1700;
+  padding: 20px 10px; }
+
+.divClips {
+  display: flex;
+  flex-wrap: wrap; }
+  .divClips .divClipsBox {
+    background-color: grey;
+    margin: 15px; }
+
+/*FIN COMUNIDAD*/
+/*INICIO CONTACTO*/
+.titleContacto {
+  color: #1a1700;
+  padding: 20px 10px; }
+
+.divFormContacto {
+  display: flex;
+  justify-content: center; }
+  .divFormContacto .formContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-radius: 2%;
+    padding: 40px;
+    margin: 20px 10px;
+    height: auto;
+    width: auto; }
+    .divFormContacto .formContacto .formTitle {
+      margin: 0px 20px 20px 20px;
+      font-size: 30px;
+      text-align: center; }
+    .divFormContacto .formContacto .inputEmail {
+      height: 25px;
+      width: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .inputName {
+      height: 25px;
+      width: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .labelMayor18 {
+      height: 25px;
+      width: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .labelMenor18 {
+      height: 25px;
+      width: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .selectMotivo {
+      height: 25px;
+      width: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .textareaComentarios {
+      height: auto;
+      margin: 10px; }
+    .divFormContacto .formContacto .inputReset {
+      height: fit-content;
+      width: fit-content;
+      margin: 10px; }
+    .divFormContacto .formContacto .inputSubmit {
+      height: 40px;
+      width: auto;
+      margin: 10px;
+      border-color: #1a1700; }
+
+/*FIN CONTACTO*/
+/*INICIO FOOTER*/
+.footer {
+  background-color: lightgray; }
+  .footer .footer__items {
+    color: grey; }
+
+/*FIN FOOTER*/
+/*INICIO MEDIA QUERY*/
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  header {
+    display: flex !important;
+    flex-direction: column !important; }
+    header .logo {
+      height: auto; }
+    header .nav {
+      display: none !important; }
+    header .nav__responsive {
+      display: flex !important;
+      flex-direction: column !important; }
+      header .nav__responsive .nav__responsive__ul {
+        list-style: none;
+        height: 100%;
+        display: flex; }
+        header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li {
+          display: inline-block;
+          padding: 10px 20px;
+          color: white; }
+          header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li .nav__responsive__ul__li__a {
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 100%; }
+        header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li:hover {
+          background-color: #272727;
+          border-radius: 5%; }
+  .divTienda {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .logo {
+      height: auto;
+      width: auto;
+      margin: 10px; }
+    header .nav {
+      display: none !important; }
+    header .nav__responsive {
+      display: flex !important;
+      width: 100%; }
+      header .nav__responsive .nav__responsive__ul {
+        background-color: rgba(231, 231, 231, 0.1);
+        border: 1px solid #a9c700;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li {
+          display: flex;
+          width: 200px;
+          padding: 10px 20px;
+          color: white;
+          align-items: center; }
+          header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li .nav__responsive__ul__li__a {
+            color: white;
+            width: 100%;
+            height: 100%; }
+        header .nav__responsive .nav__responsive__ul .nav__responsive__ul__li:hover {
+          background-color: #272727;
+          border-radius: 5%; }
+  .divQuienesSomos {
+    display: flex;
+    flex-direction: column; }
+  .divTienda {
+    display: flex;
+    flex-direction: column; } }
+
+/*FIN MEDIA QUERY*/
